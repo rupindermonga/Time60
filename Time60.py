@@ -6,7 +6,7 @@ class Time60(object):
         self.mint = gs.mod(mint, 60)
     
     def __str__(self):
-        return '{}:{}'.format(self.hr, self.mint)
+        return '{}:{:02d}'.format(self.hr, self.mint)
 
     __repr__ = __str__
 
